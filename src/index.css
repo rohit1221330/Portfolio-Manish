@@ -1,0 +1,110 @@
+/* 1. Fonts Import (Clash Display jaisa 'Syne' aur clean 'Inter') */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@400;700;800&display=swap');
+
+/* 2. Tailwind Setup */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 1. Film Grain Texture (Ye site ko movie jaisa banayega) */
+.bg-noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.05;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  filter: contrast(170%) brightness(1000%);
+}
+
+@media (min-width: 768px) {
+  body {
+    cursor: none; /* Default teer hata do, apna cursor dikhao */
+  }
+  a, button, input {
+    cursor: none; /* Links pe bhi haath ka nishaan hata do */
+  }
+}
+/* 2. Custom Cinematic Font (Agar import nahi kiya toh) */
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,400,600,700&display=swap');
+
+.font-clash {
+  font-family: 'Clash Display', sans-serif;
+}
+
+/* 3. Global Reset & Smooth Scroll */
+:root {
+  /* Agar Clash Display local file hai toh yahan define hoga, 
+     filhal hum Syne use kar rahe hain fallback ke liye */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #050505; /* Matches our 'void' color */
+  color: #E0E0E0;            /* Matches our 'ash' color */
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;        /* Horizontal scroll rokne ke liye */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Selection Color (Jab user text select kare) */
+::selection {
+  background-color: #FF5722; /* Lava color */
+  color: #000;
+}
+
+/* Scrollbar Design (Chrome/Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5722;
+}
+
+/* Utility Class for Headlines */
+.font-cinematic {
+  font-family: 'Syne', sans-serif; /* Clash Display alternative */
+}
+
+/* --- LENIS SMOOTH SCROLL REQUIRED CSS --- */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important; /* Browser ka default smooth scroll band karo */
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none; /* Iframe issues fix */
+}
+
+/* --- OPTIMIZATION (Agar lag ho raha hai) --- */
+/* Agar background noise ya blur se lag ho, to ye try karo */
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; /* Sirf horizontal scroll chupao */
+}
