@@ -29,7 +29,7 @@ const ContactSection = () => {
 
     try {
       // FormSubmit.co service use kar rahe hain (Free & No Login)
-      const response = await fetch("https://formsubmit.co/ajax/rohitdhyani50@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/Manishmehar2006@gmail.com", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
@@ -102,10 +102,10 @@ const ContactSection = () => {
             </h2>
 
             {/* Bio Text */}
-            <p className="max-w-md mb-8 text-lg leading-relaxed text-smoke font-body">
+            {/* <p className="max-w-md mb-8 text-lg leading-relaxed text-smoke font-body">
               I'm currently available for freelance projects and full-time opportunities.
               If you have a project that needs a <span className="font-medium text-white">cinematic touch</span>, let's talk.
-            </p>
+            </p> */}
 
             {/* Contact Details List */}
             <div className="mb-8 space-y-4">

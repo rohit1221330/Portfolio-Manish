@@ -17,15 +17,15 @@ const projects = [
  
  
   {
-    id: 4,
-    title: 'Client work',
+    id: 2,
+    title: 'Typography Video',
     // category: 'Fashion Film',
     description: 'High contrast editorial',
     videoSrc: '/Client Work/Sample.mp4',
     orientation: 'vertical',
   },
   {
-    id: 5,
+    id: 3,
     title: 'Motion Graphics',
     // category: 'Motion Graphics',
     description: 'High contrast editorial',
@@ -33,11 +33,11 @@ const projects = [
     orientation: 'vertical',
   },
   {
-    id: 6,
-    title: 'Motion Graphics',
+    id: 4,
+    title: 'Talking Head Video',
     // category: 'Reels Edit',
     description: 'High contrast editorial',
-    videoSrc: '/Motion Graphics/Sample_2.mp4',
+    videoSrc: '/Motion Graphics/Sample_8.mp4',
     orientation: 'vertical',
   },
  

@@ -98,14 +98,14 @@ const SkillsSection = () => {
                 {/* Header: Icon + Percent */}
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex items-center justify-center w-8 h-8 transition-colors border rounded-lg md:w-12 md:h-12 bg-gradient-to-br from-orange-900/40 to-black border-orange-500/20 group-hover:border-orange-500/60 shrink-0">
-                    <Icon className="w-4 h-4 text-orange-500 md:w-6 md:h-6 group-hover:text-orange-400 transition-all" />
+                    <Icon className="w-4 h-4 text-orange-500 transition-all md:w-6 md:h-6 group-hover:text-orange-400" />
                   </div>
                   <span className="font-mono text-sm font-bold text-orange-500 md:text-xl drop-shadow-sm">{animatedLevels[i]}%</span>
                 </div>
 
                 {/* Title & Desc */}
                 <div>
-                  <h3 className="mb-1 text-sm font-bold text-gray-200 md:text-lg font-cinematic group-hover:text-white leading-tight">{skill.name}</h3>
+                  <h3 className="mb-1 text-sm font-bold leading-tight text-gray-200 md:text-lg font-cinematic group-hover:text-white">{skill.name}</h3>
                   {/* Mobile pe description hide kar sakte hain agar congested lage, filhal chota kiya hai */}
                   <p className="text-[10px] md:text-sm text-gray-500 font-body leading-tight line-clamp-2 md:line-clamp-none">{skill.description}</p>
                 </div>
@@ -136,7 +136,7 @@ const SkillsSection = () => {
         Software & Tech
       </div>
       <div className="flex flex-wrap justify-center gap-2 md:gap-4">
-        {['Premiere Pro', 'After Effects', 'Photoshop', 'CapCut',].map((tool) => (
+        {['Premiere Pro', 'After Effects', 'Photoshop', 'CapCut','Davinci resolve'].map((tool) => (
           <div
             key={tool}
             className="px-3 py-2 md:px-6 md:py-3 bg-[#0A0A0A] border border-white/10 rounded-full text-[10px] md:text-sm font-medium font-body text-gray-300 

@@ -141,7 +141,7 @@ const AboutSection = () => {
               </div>
               {/* SIGNATURE STYLE */}
               <div className="font-clash font-bold text-2xl text-white/20 italic rotate-[-5deg]">
-                Manish Meher
+                Manish Mehar
               </div>
             </div>
 
