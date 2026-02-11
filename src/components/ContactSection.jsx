@@ -244,6 +244,9 @@ const ContactSection = () => {
             © 2025 Manish Maher. All Rights Reserved.
           </p>
           <p className="font-mono text-xs text-smoke/60">
+            Made By  <a href = "https://rohit-dhyani.vercel.app/" className="text-lava hover:underline">Rohit Dhyani</a>
+          </p>
+          <p className="font-mono text-xs text-smoke/60">
             Based in <span className="text-lava">Delhi, India</span>
           </p>
         </div>
