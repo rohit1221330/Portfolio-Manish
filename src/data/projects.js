@@ -48,7 +48,7 @@ export const projects = [
     orientation: 'vertical',
   },
   {
-    id: 7,
+    id: 7, 
     title: 'Motion Graphics',
     // category: 'Documentary',
     description: 'Industrial manufacturing story',
