@@ -90,7 +90,7 @@ const AboutSection = () => {
                 into Coherence
               </span>
             </h2>
-            
+
 
             <div className="space-y-8 font-sans text-lg leading-relaxed text-gray-400">
 
@@ -107,7 +107,7 @@ const AboutSection = () => {
               </p>
 
               {/* The "Outperform" Line - Chaos into Coherence */}
-            
+
 
             </div>
 
@@ -123,7 +123,7 @@ const AboutSection = () => {
                 <Zap className="w-6 h-6 mb-2 text-orange-500" />
                 {/* MATCHING FONT: font-clash */}
                 <h4 className="mb-1 font-bold text-white font-clash">Engaging</h4>
-                <p className="font-mono text-xs text-gray-400">Content that retains attention.</p>
+                <p className="font-mono text-xs text-gray-400">Content that retains.</p>
               </div>
             </div>
 
